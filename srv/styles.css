@@ -1,0 +1,110 @@
+body {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Roboto, Droid Sans, Ubuntu, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#mount {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.loading {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+img {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    max-height: calc(96vh - 56px);
+    max-width: 100%;
+    width: auto;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.font-headline {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.button--search {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    display: block;
+    font-size: 40px;
+    height: 65px;
+    margin: 24px auto;
+    width: 65px;
+}
+
+.input {
+    border: 2px solid #7dd
+}
+
+/*Spinner styles*/
+.spinner-wrapper {
+    background: rgba(200,200,200,.7);
+    left: 0;
+    height: calc(96vh - 56px);
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 72px;
+}
+
+.react-spinner {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+}
+
+.react-spinner_bar {
+  -webkit-animation: react-spinner_spin 1.2s linear infinite;
+  -moz-animation: react-spinner_spin 1.2s linear infinite;
+  animation: react-spinner_spin 1.2s linear infinite;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  width: 20%;
+  height: 7.8%;
+  top: -3.9%;
+  left: -10%;
+}
+
+@keyframes react-spinner_spin {
+ 0% { opacity: 1; }
+ 100% { opacity: 0.15; }
+}
+
+@-moz-keyframes react-spinner_spin {
+ 0% { opacity: 1; }
+ 100% { opacity: 0.15; }
+}
+
+@-webkit-keyframes react-spinner_spin {
+ 0% { opacity: 1; }
+ 100% { opacity: 0.15; }
+}
